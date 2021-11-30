@@ -2,19 +2,72 @@
 
 \usepackage[margin=0.75in]{geometry}
 
+\title{\textbf{Mathematical Formulae}}
+\author{Nakul Singh}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+
 \usepackage{fancyhdr}
+
+
 \begin{document}
 
-\begin{flushleft}
-\begin{align*}
-sin(A+B)&=sinAcosB+cosAsinB & sin(A-B)&=sinAcosB-cosAsinB\\
-cos(A+B)&=cosAcosB-sinAsinB & cos(A-B)&=cosAcosB+sinAsinB\\
-tan(A+B)&=\frac{tanA+tanB}{1-tanAtanB} & tan(A+B)&=\frac{tanA-tanB}{1+tanAtanB}\\
+\begin{titlepage}
+\clearpage\maketitle
+\thispagestyle{empty}
+\begin{center}
+\textit{Formatted and Type-setted using}\\
+\medskip
+{\Large\LaTeX}
+\end{center}
+\end{titlepage}
+\newpage
 
-\end{align*}
-\end{flushleft}
+\pagestyle{fancy}
+\fancyhead[L]{Mathematical Formulae}
+\fancyhead[R]{\LaTeX}
+\fancyfoot[C]{Page \thepage}
+\twocolumn
 
+\section{Trigonometry}
+\subsection{Addition/Difference Formulae:}
+$
+sin(A+B)=sinA\,cosB+cosA\,sinB\\
+\smallskip sin(A-B)=sinA\,cosB-cosA\,sinB\\
+cos(A+B)=cosA\,cosB-sinA\,sinB\\
+\medskip cos(A-B)=cosA\,cosB+sinA\,sinB\\
+\displaystyle
+\smallskip tan(A+B)=\frac{tanA+tanB}{1-tanA\,tanB}\\
+\medskip tan(A-B)=\frac{tanA-tanB}{1+tanA\,tanB}\\
+\smallskip cot(A+B)=\frac{cotA\,cotB-1}{cotB+cotA}\\
+\medskip cot(A-B)=\frac{cotA\,cotB+1}{cotB-cotA}\\
+\smallskip sinC+sinD=2\,sin\left(\frac{C+D}{2}\right)cos\left(\frac{C-D}{2}\right)\\
+\smallskip sinC-sinD=2\,cos\left(\frac{C+D}{2}\right)sin\left(\frac{C-D}{2}\right)\\
+\smallskip cosC+cosD=2\,cos\left(\frac{C+D}{2}\right)cos\left(\frac{C-D}{2}\right)\\
+\smallskip cosC-cosD=2\,sin\left(\frac{C+D}{2}\right)cos\left(\frac{D-C}{2}\right)
+$
+\subsubsection{Special Cases:}
+$
+\displaystyle
+\smallskip tan\left(\frac{\pi}{4}+\theta\right)=\frac{1+tan\theta}{1-tan\theta}\\
+tan\left(\frac{\pi}{4}-\theta\right)=\frac{1-tan\theta}{1+tan\theta}
+$
+\subsection{Product Formulae:}
+$
+2\,sinA\,cosB=sin(A+B)+sin(A-B)\\
+2\,cosA\,sinB=sin(A+B)-sin(A-B)\\
+2\,cosA\,cosB=cos(A+B)+cos(A-B)\\
+\smallskip 2\,sinA\,sinB=cos(A-B)-cos(A+B)\\
+sin^{2}A-sin^{2}B=sin(A+B)\,sin(A-B)\\
+cos^{2}A-sin^{2}B=cos(A+B)\,cos(A-B)
+$
+\subsection{Double Angle Formulae:}
+$
+\smallskip sin\,2\theta=2\,sin\theta \, cos\theta\\
+\displaystyle
+\medskip sin\,2\theta=\frac{2\,tan\theta}{1+tan^{2}\theta}\\
+cos\,2\theta=cos^{2}\theta-sin^{2}\theta\\
+$
 \end{document} 
